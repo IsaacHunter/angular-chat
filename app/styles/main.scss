@@ -1,0 +1,50 @@
+$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
+
+input[type='text'],input[type='number'],textarea {font-size:16px;}
+
+body {
+    overflow: hidden;
+}
+.container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 0;
+    .message-container {
+        background-color: lightblue;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        .messages {
+            background-color: white;
+            position: absolute;
+            bottom: 40px;
+            left: 15px;
+            right: 15px;
+        }
+    }
+}
+.send-message {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 40px;
+    input[type="text"] {
+        width: 80%;
+    }
+    .btn {
+        width: 20%;
+    }
+    input {
+        float: left;
+    }
+    .form-group {
+        margin: 0;
+    }
+}
